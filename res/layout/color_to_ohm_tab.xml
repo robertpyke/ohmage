@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/coColorToOhmTabOuterLinearLayout" android:layout_height="wrap_content" android:layout_width="fill_parent">
+<TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/coResistorImageTableLayout" android:layout_marginTop="@dimen/top_padding" android:background="@drawable/resistor_background_5" android:layout_marginLeft="10px"><TableRow android:id="@+id/TableRow02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b1_top_padding"><Spinner android:layout_height="wrap_content" android:id="@+id/band1" android:layout_width="wrap_content" android:prompt="@string/band1_prompt" android:minHeight="@dimen/b_height" android:minWidth="@dimen/co_b1_width" android:scrollbarSize="@dimen/co_selector_l_padding" android:background="@null"></Spinner></TableRow><TableRow android:id="@+id/TableRow03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b2_top_padding"><Spinner android:layout_height="wrap_content" android:id="@+id/band2" android:prompt="@string/band2_prompt" android:minHeight="@dimen/b_height" android:minWidth="@dimen/co_b2_width" android:background="@null" android:layout_width="wrap_content" android:paddingRight="@dimen/text_padding" android:paddingLeft="@dimen/text_padding"></Spinner></TableRow><TableRow android:id="@+id/TableRow04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b3_top_padding">
+<Spinner android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/band3" 
+	android:prompt="@string/band3_prompt" 
+	android:minHeight="@dimen/b_height" 
+	android:minWidth="@dimen/co_b3_width" 
+	android:background="@null" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/text_padding"><!-- android:spinnerSelector="@drawable/custom_spinner_selector" -->
+</Spinner>
+</TableRow><TableRow android:id="@+id/TableRow06" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b4_top_padding"><Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/band4" android:prompt="@string/band4_prompt" android:minHeight="@dimen/b_height" android:minWidth="@dimen/co_b4_width" android:background="@null"></Spinner>
+</TableRow>
+
+
+</TableLayout><TableLayout android:id="@+id/TableLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lc_rc_padding" android:layout_marginTop="@dimen/top_padding">
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/coOhmValue" android:textSize="@dimen/co_text_size"></TextView></TableRow>
+
+</TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ocOhmToColorTabOuterLinearLayout" android:layout_width="fill_parent" android:layout_marginTop="@dimen/top_padding" android:layout_height="wrap_content">
+<TableLayout android:layout_height="wrap_content" android:id="@+id/coResistorImageTableLayout" android:layout_marginTop="@dimen/top_padding" android:layout_width="wrap_content" android:background="@drawable/resistor_background_5" android:layout_marginLeft="10px"><TableRow android:id="@+id/TableRow02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b1_top_padding"><TextView android:layout_height="wrap_content" android:id="@+id/ocBand1TextView" android:minHeight="@dimen/b_height" android:layout_width="fill_parent" android:minWidth="@dimen/oc_b1_width" android:textSize="@dimen/oc_b_text_size" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/text_padding"></TextView>
+</TableRow><TableRow android:id="@+id/TableRow03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b2_top_padding"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ocBand2TextView" android:minHeight="@dimen/b_height" android:minWidth="@dimen/oc_b2_width" android:textSize="@dimen/oc_b_text_size" android:layout_marginLeft="@dimen/middle_b_lr_margin" android:layout_marginRight="@dimen/middle_b_lr_margin" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/text_padding"></TextView>
+</TableRow><TableRow android:id="@+id/TableRow04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b3_top_padding">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ocBand3TextView" android:minHeight="@dimen/b_height" android:minWidth="@dimen/oc_b3_width" android:textSize="@dimen/oc_b_text_size" android:layout_marginLeft="@dimen/middle_b_lr_margin" android:layout_marginRight="@dimen/middle_b_lr_margin" android:paddingRight="@dimen/text_padding" android:paddingLeft="@dimen/text_padding"></TextView>
+</TableRow><TableRow android:id="@+id/TableRow06" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="@dimen/b4_top_padding">
+<TextView android:layout_height="wrap_content" android:id="@+id/ocBand4TextView" android:minHeight="@dimen/b_height" android:minWidth="@dimen/oc_b4_width" android:layout_width="wrap_content" android:textSize="@dimen/oc_b_text_size" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/text_padding"></TextView>
+</TableRow>
+
+
+</TableLayout><TableLayout android:id="@+id/TableLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lc_rc_padding" android:layout_marginTop="@dimen/top_padding">
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+
+
+
+
+<AutoCompleteTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ocOhmValueAutoCompleteTextView" android:singleLine="true" android:text="0"></AutoCompleteTextView><Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ocUnitSpinner"></Spinner>
+
+
+</TableRow><TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="±" android:id="@+id/ocPlusOrMinusText" android:textSize="@dimen/oc_text_size" android:paddingLeft="@dimen/plus_minus_left_padding"></TextView>
+<Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ocToleranceSpinner"></Spinner>
+
+
+
+</TableRow><TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"></LinearLayout><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update" android:id="@+id/updateButton"></Button>
+
+</TableRow>
+
+</TableLayout>
+</LinearLayout>

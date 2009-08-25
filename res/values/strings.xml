@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Ohmage</string>
+<string name="app_description">Ohmage allows a user to check the value of a resistor based on its color bands, and to check what the color bands are for a given resistor value.</string>
+<string name="version">1.0.2</string>
+<string name="home_page">www.robertpyke.com</string>
+<string name="email">developer.robert.j.pyke@gmail.com</string>
+<string name="support_message">If you have any questions, suggestions, or bugs to report, send me an email.</string>
+<string name="co_instructions">If you would like to find out the resistance (Ωs) of a resistor based on its color bands, select the \"color → Ω\" tab. Once you have selected the tab, simply click each band and select its color to match the resistor you are comparing to. Once you have selected each of the band colors, you have finished. The value shown is the resistance of that resistor.</string>
+<string name="oc_instructions">If you would like to find out the color bands of a resistor based on a required resistance, select the \"Ω → color\" tab. Once you have selected the tab, simply input the desired resistance and tolerance values, then click \"update\". The resistor image shows the color bands of your requested resistance. Note, the resistance input field will validate your input, so if your input changes to ERR, your input was invalid; Use the auto-completion hints, they will only show valid inputs. Valid inputs are #, ##, ##0, 0## and #.#, where # is any integer [0-9].</string>
+
+<string name="future_additions">Better track ball support. 5 and 6 band resistor support. Resistor standards information (E6, E12, E24..).</string>
+
+<drawable name="black">#B000</drawable>
+<drawable name="brown">#B630</drawable>
+<drawable name="red">#BD00</drawable>
+<drawable name="orange">#BF60</drawable>
+<drawable name="yellow">#BFF0</drawable>
+<drawable name="green">#B0A0</drawable>
+<drawable name="blue">#B00A</drawable>
+<drawable name="violet">#B606</drawable>
+<drawable name="gray">#B999</drawable>
+<drawable name="white">#BFFF</drawable>
+<drawable name="gold">#BFF3</drawable>
+<drawable name="silver">#B666</drawable>
+
+
+<string name="band1_prompt">Band 1 - 1st Figure</string>
+<string name="band2_prompt">Band 2 - 2nd Figure</string>
+<string name="band3_prompt">Band 3 - Multiplier</string>
+<string name="band4_prompt">Band 4 - Tolerance</string>
+<string name="color_to_ohm_label">color → Ω</string>
+<string name="ohm_value_to_color_label">Ω → color</string>
+
+<string name="e_std_label">E Std</string>
+
+<string name="miliOhm">mΩ</string>
+<string name="ohm">Ω</string>
+<string name="kilaOhm">kΩ</string>
+<string name="megaOhm">MΩ</string>
+<string name="plus_or_minus_symbol">±</string>
+
+<string-array name="unit_array">
+	<item>@string/ohm</item>
+	<item>@string/kilaOhm</item>
+	<item>@string/megaOhm</item>
+</string-array>
+
+<string name="tol_0p05pc">0.05%</string>
+<string name="tol_0p1pc">0.1%</string>
+<string name="tol_0p25pc">0.25%</string>
+<string name="tol_0p5pc">0.5%</string>
+<string name="tol_1pc">1%</string>
+<string name="tol_2pc">2%</string>
+<string name="tol_5pc">5%</string>
+<string name="tol_10pc">10%</string>
+
+<string-array name="tolerance_array">
+	<item>@string/tol_0p05pc</item>
+	<item>@string/tol_0p1pc</item>
+	<item>@string/tol_0p25pc</item>
+	<item>@string/tol_0p5pc</item>
+   	<item>@string/tol_1pc</item>
+   	<item>@string/tol_2pc</item>
+   	<item>@string/tol_5pc</item>
+   	<item>@string/tol_10pc</item>   		
+</string-array>
+
+<dimen name="co_b1_width">60px</dimen>
+<dimen name="co_b2_width">50px</dimen>
+<dimen name="co_b3_width">50px</dimen>
+<dimen name="co_b4_width">60px</dimen>
+
+<dimen name="oc_b1_width">60px</dimen>
+<dimen name="oc_b2_width">50px</dimen>
+<dimen name="oc_b3_width">50px</dimen>
+<dimen name="oc_b4_width">60px</dimen>
+
+
+<dimen name="b_height">25px</dimen>
+
+<dimen name="co_text_size">25px</dimen>
+<dimen name="oc_text_size">25px</dimen>
+
+<dimen name="co_b_text_size">15px</dimen>
+<dimen name="oc_b_text_size">15px</dimen>
+
+<dimen name="lc_rc_padding">20px</dimen>
+<dimen name="top_padding">5px</dimen>
+<dimen name="co_selector_l_padding">10px</dimen>
+<dimen name="text_padding">3px</dimen>
+<dimen name="middle_b_lr_margin">5px</dimen>
+
+<dimen name="b1_top_padding">20px</dimen>
+<dimen name="b2_top_padding">5px</dimen>
+<dimen name="b3_top_padding">5px</dimen>
+<dimen name="b4_top_padding">25px</dimen>
+
+<dimen name="plus_minus_left_padding">60px</dimen>
+<dimen name="update_button_left_padding">60px</dimen>
+
+<string name="E6_Tolerance">20%</string>
+<string-array name="E6">
+      <item>10</item>
+      <item>15</item>
+      <item>22</item>
+      <item>33</item>
+      <item>47</item>
+      <item>68</item>
+</string-array>
+
+<string name="E12_Tolerance">10%</string>
+<string-array name="E12">
+      <item>10</item>
+      <item>12</item>
+      <item>15</item>
+      <item>18</item>
+      <item>22</item>
+      <item>27</item>
+      <item>33</item>
+      <item>39</item>
+      <item>47</item>
+      <item>56</item>
+      <item>68</item>
+      <item>82</item>
+</string-array>
+
+<string name="E24_Tolerance">5%</string>
+<string-array name="E24">
+      <item>10</item>
+      <item>11</item>
+      <item>12</item>
+      <item>13</item>
+      <item>15</item>
+      <item>16</item>
+      <item>17</item>
+      <item>20</item>
+      <item>22</item>
+      <item>24</item>
+      <item>27</item>
+      <item>30</item>
+      <item>33</item>
+      <item>36</item>
+      <item>39</item>
+      <item>43</item>
+      <item>47</item>
+      <item>51</item>
+      <item>56</item>
+      <item>62</item>
+      <item>68</item>
+      <item>75</item>
+      <item>82</item>
+      <item>91</item>
+</string-array>
+
+<string name="E48_Tolerance">2%</string>
+<string-array name="E48">
+      <item>100</item>
+      <item>105</item>
+      <item>110</item>
+      <item>115</item>
+      <item>121</item>
+      <item>127</item>
+      <item>133</item>
+      <item>140</item>
+      <item>147</item>
+      <item>154</item>
+      <item>162</item>
+      <item>169</item>
+      <item>178</item>
+      <item>187</item>
+      <item>196</item>
+      <item>205</item>
+      <item>215</item>
+      <item>226</item>
+      <item>237</item>
+      <item>249</item>
+      <item>261</item>
+      <item>274</item>
+      <item>287</item>
+      <item>301</item>
+      <item>316</item>
+      <item>332</item>
+      <item>348</item>
+      <item>365</item>
+      <item>383</item>
+      <item>402</item>
+      <item>422</item>
+      <item>442</item>
+      <item>464</item>
+      <item>487</item>
+      <item>511</item>
+      <item>536</item>
+      <item>562</item>
+      <item>590</item>
+      <item>619</item>
+      <item>649</item>
+      <item>681</item>
+      <item>715</item>
+      <item>750</item>
+      <item>787</item>
+      <item>825</item>
+      <item>866</item>
+      <item>909</item>
+      <item>953</item>
+</string-array>
+
+<string name="E96_Tolerance">1%</string>
+<string-array name="E96">
+       <item>100</item>
+       <item>102</item>
+       <item>105</item>
+       <item>107</item>
+       <item>110</item>
+       <item>113</item>
+       <item>115</item>
+       <item>118</item>
+       <item>121</item>
+       <item>124</item>
+       <item>127</item>
+       <item>130</item>
+       <item>133</item>
+       <item>137</item>
+       <item>140</item>
+       <item>143</item>
+       <item>147</item>
+       <item>150</item>
+       <item>154</item>
+       <item>158</item>
+       <item>162</item>
+       <item>165</item>
+       <item>169</item>
+       <item>174</item>
+       <item>178</item>
+       <item>182</item>
+       <item>187</item>
+       <item>191</item>
+       <item>196</item>
+       <item>200</item>
+       <item>205</item>
+       <item>210</item>
+       <item>215</item>
+       <item>221</item>
+       <item>226</item>
+       <item>232</item>
+       <item>237</item>
+       <item>243</item>
+       <item>249</item>
+       <item>255</item>
+       <item>261</item>
+       <item>267</item>
+       <item>274</item>
+       <item>280</item>
+       <item>287</item>
+       <item>294</item>
+       <item>301</item>
+       <item>309</item>
+       <item>316</item>
+       <item>324</item>
+       <item>332</item>
+       <item>340</item>
+       <item>348</item>
+       <item>357</item>
+       <item>365</item>
+       <item>374</item>
+       <item>383</item>
+       <item>392</item>
+       <item>402</item>
+       <item>412</item>
+       <item>422</item>
+       <item>432</item>
+       <item>442</item>
+       <item>453</item>
+       <item>464</item>
+       <item>475</item>
+       <item>487</item>
+       <item>499</item>
+       <item>511</item>
+       <item>523</item>
+       <item>536</item>
+       <item>549</item>
+       <item>562</item>
+       <item>576</item>
+       <item>590</item>
+       <item>604</item>
+       <item>619</item>
+       <item>634</item>
+       <item>649</item>
+       <item>665</item>
+       <item>681</item>
+       <item>698</item>
+       <item>715</item>
+       <item>732</item>
+       <item>750</item>
+       <item>768</item>
+       <item>787</item>
+       <item>806</item>
+       <item>825</item>
+       <item>845</item>
+       <item>866</item>
+       <item>887</item>
+       <item>909</item>
+       <item>931</item>
+       <item>953</item>
+       <item>976</item>
+</string-array>
+
+<string name="E192_Tolerance">0.5%, 0.25%, 0.1%</string>
+<string-array name="E192">
+       <item>100</item>
+       <item>101</item>
+       <item>102</item>
+       <item>104</item>
+       <item>105</item>
+       <item>106</item>
+       <item>107</item>
+       <item>109</item>
+       <item>110</item>
+       <item>111</item>
+       <item>113</item>
+       <item>114</item>
+       <item>115</item>
+       <item>117</item>
+       <item>118</item>
+       <item>120</item>
+       <item>121</item>
+       <item>123</item>
+       <item>124</item>
+       <item>126</item>
+       <item>127</item>
+       <item>129</item>
+       <item>130</item>
+       <item>132</item>
+       <item>133</item>
+       <item>135</item>
+       <item>137</item>
+       <item>138</item>
+       <item>140</item>
+       <item>142</item>
+       <item>143</item>
+       <item>145</item>
+       <item>147</item>
+       <item>149</item>
+       <item>150</item>
+       <item>152</item>
+       <item>154</item>
+       <item>156</item>
+       <item>158</item>
+       <item>160</item>
+       <item>162</item>
+       <item>164</item>
+       <item>165</item>
+       <item>167</item>
+       <item>169</item>
+       <item>172</item>
+       <item>174</item>
+       <item>176</item>
+       <item>178</item>
+       <item>180</item>
+       <item>182</item>
+       <item>184</item>
+       <item>187</item>
+       <item>189</item>
+       <item>191</item>
+       <item>193</item>
+       <item>196</item>
+       <item>198</item>
+       <item>200</item>
+       <item>203</item>
+       <item>205</item>
+       <item>208</item>
+       <item>210</item>
+       <item>213</item>
+       <item>215</item>
+       <item>218</item>
+       <item>221</item>
+       <item>223</item>
+       <item>226</item>
+       <item>229</item>
+       <item>232</item>
+       <item>234</item>
+       <item>237</item>
+       <item>240</item>
+       <item>243</item>
+       <item>246</item>
+       <item>249</item>
+       <item>252</item>
+       <item>255</item>
+       <item>258</item>
+       <item>261</item>
+       <item>264</item>
+       <item>267</item>
+       <item>271</item>
+       <item>274</item>
+       <item>277</item>
+       <item>280</item>
+       <item>284</item>
+       <item>287</item>
+       <item>291</item>
+       <item>294</item>
+       <item>298</item>
+       <item>301</item>
+       <item>305</item>
+       <item>309</item>
+       <item>312</item>
+       <item>316</item>
+       <item>320</item>
+       <item>324</item>
+       <item>328</item>
+       <item>332</item>
+       <item>336</item>
+       <item>340</item>
+       <item>344</item>
+       <item>348</item>
+       <item>352</item>
+       <item>357</item>
+       <item>361</item>
+       <item>365</item>
+       <item>370</item>
+       <item>374</item>
+       <item>379</item>
+       <item>383</item>
+       <item>388</item>
+       <item>392</item>
+       <item>397</item>
+       <item>402</item>
+       <item>407</item>
+       <item>412</item>
+       <item>417</item>
+       <item>422</item>
+       <item>427</item>
+       <item>432</item>
+       <item>437</item>
+       <item>442</item>
+       <item>448</item>
+       <item>453</item>
+       <item>459</item>
+       <item>464</item>
+       <item>470</item>
+       <item>475</item>
+       <item>481</item>
+       <item>487</item>
+       <item>493</item>
+       <item>499</item>
+       <item>505</item>
+       <item>511</item>
+       <item>517</item>
+       <item>523</item>
+       <item>530</item>
+       <item>536</item>
+       <item>542</item>
+       <item>549</item>
+       <item>556</item>
+       <item>562</item>
+       <item>569</item>
+       <item>576</item>
+       <item>583</item>
+       <item>590</item>
+       <item>597</item>
+       <item>604</item>
+       <item>612</item>
+       <item>619</item>
+       <item>626</item>
+       <item>634</item>
+       <item>642</item>
+       <item>649</item>
+       <item>657</item>
+       <item>665</item>
+       <item>673</item>
+       <item>681</item>
+       <item>690</item>
+       <item>698</item>
+       <item>706</item>
+       <item>715</item>
+       <item>723</item>
+       <item>732</item>
+       <item>741</item>
+       <item>750</item>
+       <item>759</item>
+       <item>768</item>
+       <item>777</item>
+       <item>787</item>
+       <item>796</item>
+       <item>806</item>
+       <item>816</item>
+       <item>825</item>
+       <item>835</item>
+       <item>845</item>
+       <item>856</item>
+       <item>866</item>
+       <item>876</item>
+       <item>887</item>
+       <item>898</item>
+       <item>909</item>
+       <item>920</item>
+       <item>931</item>
+       <item>942</item>
+       <item>953</item>
+       <item>965</item>
+       <item>976</item>
+       <item>988</item>
+</string-array>
+
+</resources>
